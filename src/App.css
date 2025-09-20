@@ -14,10 +14,12 @@ html {
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding: 1rem;
 }
 
 .coming-soon .content {
   max-width: 500px;
+  width: 100%;
   padding: 2rem;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 16px;
@@ -61,4 +63,21 @@ html {
 
 .subscribe button:hover {
   background-color: #ff9500;
+}
+
+/* 🔥 Responsive adjustments */
+@media (max-width: 768px) {
+  .coming-soon h1 {
+    font-size: 2.2rem;
+  }
+  .coming-soon p {
+    font-size: 1rem;
+  }
+  .subscribe {
+    flex-direction: column;
+  }
+  .subscribe input,
+  .subscribe button {
+    width: 100%;
+  }
 }
